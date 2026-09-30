@@ -1,0 +1,22 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Hands-on web automation project with Playwright 1.63: locators, forms, waits, validations, screenshots, file uploads and downloads, multiple tabs, login, Page Object Model, Trace Viewer, and HTML reports.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krxxg04/playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krxxg04/playwright/issues"
+  },
+  "homepage": "https://github.com/krxxg04/playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3"
+  }
+}
