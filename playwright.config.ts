@@ -35,6 +35,11 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'chromium-dark',
+      use: { ...devices['Desktop Chrome'], colorScheme: 'dark' },
+    },
+
+    {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
@@ -47,6 +52,26 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+    },
+
+    {
+      name: 'iPhone 12 Pro',
+      use: {
+        userAgent:
+          'Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like macOS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+        screen: {
+          width: 390,
+          height: 844,
+        },
+        viewport: {
+          width: 390,
+          height: 664,
+        },
+        deviceScaleFactor: 3,
+        isMobile: true,
+        hasTouch: true,
+        browserName: 'webkit',
+      },
     },
 
     /* Test against mobile viewports. */
